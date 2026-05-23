@@ -126,10 +126,10 @@ erosion solely from debt servicing costs.
 
 ---
 
-👤 Author
-Name : Dwi Farhan
-Email : mighty.coord@gmail.com
-LinkedIn : linkedin.com/in/dwi-farhan
+## 👤 Author
+Name  : Dwi Farhan  
+Email : mighty.coord@gmail.com  
+Linkedin : linkedin.com/in/dwi-farhan
 
 ---
 
