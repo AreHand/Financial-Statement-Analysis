@@ -26,7 +26,7 @@ The key questions this project aims to answer:
 
 # 🏢 Companies Analyzed
 | # | Company | Business Type | Period |
-|---|---|
+|---|---|---|---|
 | 1 | Kantor Konsultan Wirausaha | Consulting Services | December 2015 |
 | 2 | Trading Company (Exercise I) | Trading / Merchandise | 2015 |
 | 3 | PT SEKAR | Manufacturing / Trading | December 2019 |
@@ -80,24 +80,6 @@ The key questions this project aims to answer:
 |---|---|---|---|---|
 | Kantor Konsultan Wirausaha | 15.2% | 84.8% | — | ✅ Very Healthy |
 | PT ABC | 43.9% | 56.1% | 0.72x | ⚠️ Needs Attention |
-
----
-
-# Key BigQuery Query
--- Profitability Comparison — All Companies
-SELECT
-  company_name,
-  COALESCE(net_sales, service_revenue) AS total_revenue,
-  net_income,
-  ROUND(net_margin_pct, 2) AS net_margin_pct,
-  CASE
-    WHEN net_margin_pct >= 30 THEN 'EXCELLENT ✅'
-    WHEN net_margin_pct >= 10 THEN 'GOOD 👍'
-    WHEN net_margin_pct >= 0  THEN 'FAIR ⚠️'
-    ELSE 'LOSS ❌'
-  END AS profitability_status
-FROM `income_statement_db.financial_report`
-ORDER BY net_margin_pct DESC;
 
 ---
 
